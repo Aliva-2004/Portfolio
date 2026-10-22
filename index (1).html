@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sushree Sangita Ray | Portfolio</title>
+<style>
+:root{--bg:#fbf8ff;--surface:#fff;--text:#1d1a2b;--muted:#625d78;--accent:#7c3aed;--accent2:#ec4899;--border:#e6e0f5;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14111f;--surface:#1e1a2e;--text:#f1eefb;--muted:#a9a3c2;--accent:#a78bfa;--accent2:#f472b6;--border:#322c4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14111f;--surface:#1e1a2e;--text:#f1eefb;--muted:#a9a3c2;--accent:#a78bfa;--accent2:#f472b6;--border:#322c4a;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 6vw;background:var(--bg);border-bottom:1px solid var(--border)}
+nav b{font-size:1.05rem}
+nav div{display:flex;gap:18px;font-size:.92rem;color:var(--muted);flex-wrap:wrap}
+nav div a:hover{color:var(--accent)}
+section{padding:72px 6vw;max-width:1000px;margin:0 auto}
+h2{font-size:1.7rem;margin:0 0 28px}
+h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;margin-top:8px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.hero{padding-top:90px;display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.hero .txt{flex:1 1 320px}
+.tag{color:var(--accent);font-weight:600;font-size:.95rem}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.1;margin:8px 0 14px}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:520px;margin:0 0 24px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--border);background:var(--surface)}
+.btn.p{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;border:0}
+.avatar{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center top;border:4px solid var(--accent);box-shadow:0 10px 40px rgba(124,58,237,.3)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.skill{margin-bottom:16px}
+.skill .row{display:flex;justify-content:space-between;font-size:.93rem;margin-bottom:6px}
+.skill .row em{font-style:normal;color:var(--muted)}
+.bar{height:8px;border-radius:8px;background:var(--border);overflow:hidden}
+.bar i{display:block;height:100%;width:65%;border-radius:8px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.proj h3{margin:0 0 8px}
+.proj p{color:var(--muted);margin:0 0 14px;font-size:.95rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chips span{font-size:.78rem;padding:3px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--border);color:var(--muted)}
+.proj a{color:var(--accent);font-weight:600;font-size:.93rem}
+.links a{display:block}
+.links a:hover{border-color:var(--accent)}
+.links b{display:block;margin-bottom:2px}
+.links span{color:var(--muted);font-size:.88rem}
+footer{text-align:center;padding:28px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<nav><b>Sushree Sangita Ray</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#profiles">Profiles</a><a href="#contact">Contact</a></div></nav>
+
+<section class="hero">
+<div class="txt">
+<div class="tag">Hello, I’m</div>
+<h1><span>Sushree Sangita Ray</span></h1>
+<p>Final-year Computer Science and Engineering student at SRM Institute of Science and Technology. I enjoy building clean, useful software and thoughtful interfaces.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><a class="btn" href="#contact">Get in Touch</a></div>
+</div>
+<img class="avatar" alt="Sushree Sangita Ray" src="data:image/jpeg;base64,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">
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card"><p style="margin:0">I’m a final-year B.Tech student in Computer Science and Engineering at SRM Institute of Science and Technology. I work with Java and SQL for logic and data, HTML and CSS for the web, and Figma and Canva for design. I like practicing problem solving on LeetCode and GeeksforGeeks, and turning ideas into working projects.</p></div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">
+<div class="skill"><div class="row"><span>Java</span><em>Intermediate</em></div><div class="bar"><i></i></div></div>
+<div class="skill"><div class="row"><span>HTML</span><em>Intermediate</em></div><div class="bar"><i></i></div></div>
+<div class="skill"><div class="row"><span>CSS</span><em>Intermediate</em></div><div class="bar"><i></i></div></div>
+</div>
+<div class="card">
+<div class="skill"><div class="row"><span>SQL</span><em>Intermediate</em></div><div class="bar"><i></i></div></div>
+<div class="skill"><div class="row"><span>Figma</span><em>Intermediate</em></div><div class="bar"><i></i></div></div>
+<div class="skill"><div class="row"><span>Canva</span><em>Intermediate</em></div><div class="bar"><i></i></div></div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card proj">
+<h3>FIFA SmartStadium AI</h3>
+<p>An AI-driven smart stadium project aimed at improving the matchday experience.</p>
+<div class="chips"><span>AI</span><span>Smart Stadium</span><span>GitHub</span></div>
+<a href="https://github.com/Aliva-2004/FIFA-SmartStadium-AI" target="_blank" rel="noopener">View on GitHub →</a>
+</div>
+<div class="card proj">
+<h3>Personal Portfolio</h3>
+<p>This responsive portfolio website, built to showcase my skills, projects and coding profiles.</p>
+<div class="chips"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+<a href="https://github.com/Aliva-2004/portfolio" target="_blank" rel="noopener">View on GitHub →</a>
+</div>
+</div>
+</section>
+
+<section id="profiles">
+<h2>Find Me Online</h2>
+<div class="grid links">
+<a class="card" href="https://www.linkedin.com/in/sushree-sangita-ray-314276349" target="_blank" rel="noopener"><b>LinkedIn</b><span>Connect with me professionally</span></a>
+<a class="card" href="https://github.com/Aliva-2004" target="_blank" rel="noopener"><b>GitHub</b><span>Aliva-2004 · my code and projects</span></a>
+<a class="card" href="https://leetcode.com/u/Sushree_2004/" target="_blank" rel="noopener"><b>LeetCode</b><span>Sushree_2004 · problem solving</span></a>
+<a class="card" href="https://www.geeksforgeeks.org/profile/sushreesangh7vw" target="_blank" rel="noopener"><b>GeeksforGeeks</b><span>sushreesangh7vw · practice and articles</span></a>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card"><p style="margin:0 0 16px">I’m open to internships, collaborations and new opportunities. Feel free to reach out by email, phone or LinkedIn.</p>
+<p style="margin:0 0 6px"><b>Email:</b> <a href="mailto:sushreesangitaray455@gmail.com" style="color:var(--accent)">sushreesangitaray455@gmail.com</a></p>
+<p style="margin:0 0 20px"><b>Phone:</b> <a href="tel:+918778216986" style="color:var(--accent)">+91 87782 16986</a></p>
+<div class="btns"><a class="btn p" href="mailto:sushreesangitaray455@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/sushree-sangita-ray-314276349" target="_blank" rel="noopener">Message on LinkedIn</a></div></div>
+</section>
+
+<footer>© 2026 Sushree Sangita Ray</footer>
+</body>
+</html>
